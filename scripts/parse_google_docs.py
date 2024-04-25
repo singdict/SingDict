@@ -21,7 +21,7 @@ def is_head(row):
 
 def parse_row(row):
 	#['Word', 'Description', 'Description OK', 'Description (updated)', Description (final), 'Example (final)', 'Remarks (if applicable)', 'POS', 'Pronun', 'Origin', 'Reference']
-	word, old_desc, desc_ok, new_desc, final_desc, example, remarks, pos, pronun, origin, reference = row
+	word, old_desc, desc_ok, new_desc, final_desc, example, alt_spell, pos, pronun, origin, license_, reference = row[:12]
 
 	if desc_ok.startswith('Not sure'): return None
 
