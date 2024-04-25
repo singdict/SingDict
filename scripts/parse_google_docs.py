@@ -21,7 +21,7 @@ def is_head(row):
 
 def parse_row(row):
 	#['Word', 'Description', 'Description OK', 'Description (updated)', Description (final), 'Example (final)', 'Remarks (if applicable)', 'POS', 'Pronun', 'Origin', 'Reference']
-	word, old_desc, desc_ok, new_desc, final_desc, example, alt_spell, pos, pronun, origin, license_, reference = row[:12]
+	word, old_desc, desc_ok, new_desc, final_desc, example, alt_spell, _, pos, pronun, origin, license_, reference = row[:13]
 
 	if desc_ok.startswith('Not sure'): return None
 
@@ -43,7 +43,7 @@ def main():
 
 		word, desc, example, pos, pronun, origin = parsed_row
 
-		jo = {"Word": word, "Pronunciation": pronun, "Definition": desc, "Example": example, "Origin": origin}
+		jo = {"Word": word, "POS": pos, "Pronunciation": pronun, "Definition": desc, "Example": example, "Origin": origin}
 		with open('{}.jsonl'.format(word), 'w') as ofp:
 			json.dump(jo, ofp)
 
