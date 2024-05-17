@@ -17,7 +17,6 @@ authors:
   - given-names: Francis
     family-names: Bond
     email: bond@ieee.org
-    name-particle: Francis
     affiliation: Palacký University
     orcid: 'https://orcid.org/0000-0003-4973-8068'
 repository-code: 'https://github.com/singdict/SingDict/'
