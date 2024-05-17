@@ -1,0 +1,27 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Singlish Dictionary
+message: >-
+  If you use this dataset, please cite it using the metadata
+  from this file.
+type: dataset
+authors:
+  - given-names: Siew Yeng
+    family-names: Chow
+    orcid: 'https://orcid.org/0000-0002-9594-7285'
+  - given-names: Chang-Uk Shin
+    family-names: Shin
+    orcid: 'https://orcid.org/0000-0003-0112-6476'
+  - given-names: Francis
+    family-names: Bond
+    email: bond@ieee.org
+    name-particle: Francis
+    affiliation: Palacký University
+    orcid: 'https://orcid.org/0000-0003-4973-8068'
+repository-code: 'https://github.com/singdict/SingDict/'
+abstract: A machine tractable open-source dictionary of Singlish
+keywords:
+  - Singlish
+license: CC-BY-SA-4.0
