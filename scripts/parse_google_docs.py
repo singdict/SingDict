@@ -45,7 +45,7 @@ def main():
 
 		jo = {"Word": word, "POS": pos, "Pronunciation": pronun, "Definition": desc, "Example": example, "Origin": origin}
 		with open('{}.jsonl'.format(word), 'w') as ofp:
-			json.dump(jo, ofp)
+			json.dump(jo, ofp, ensure_ascii=False)
 
 if __name__ == '__main__':
 	args = parse_args()
